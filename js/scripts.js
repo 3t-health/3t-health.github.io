@@ -5,3 +5,14 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+$(document).ready(function(){
+   // var $form = $('form');
+   var $form = #('contactForm');
+   $form.submit(function(){
+      $.post($(this).attr('action'), $(this).serialize(), function(response){
+            // do something here on success
+      },'json');
+      return false;
+   });
+});

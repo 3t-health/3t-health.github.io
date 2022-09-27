@@ -23,8 +23,15 @@
         <div class="masthead">
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">Coming Soon: 3T.Health</h1>
+                    <h1 class="fst-italic lh-1 mb-4">3T.Health </h1>
                     <p class="mb-5">We're working on a relaunch of this site. Sign up below to receive updates and to be notified when we launch!</p>
+
+                    <!-- <form id='newForm' action="https://staging.relieftelemed.com/relief_api/v1/contact_us/">
+                      <label for="fname">Email:</label>
+                      <input type="text" id="email" name="email" ><br>
+                      <input type="submit" value="Submit">
+                    </form> -->
+
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- * * SB Forms Contact Form * *-->
                     <!-- * * * * * * * * * * * * * * *-->
@@ -32,7 +39,7 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="873888ae-422d-4040-9f9c-0d1cd4f607fb">
+                    <form id="contactForm" action="https://staging.relieftelemed.com/relief_api/v1/contact_us/" data-sb-form-api-token="873888ae-422d-4040-9f9c-0d1cd4f607fb">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
@@ -70,10 +77,11 @@
                 <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
