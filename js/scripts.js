@@ -8,11 +8,19 @@
 
 $(document).ready(function(){
    // var $form = $('form');
-   var $form = #('contactForm');
-   $form.submit(function(){
+   // var $form = #('contactForm');
+   $("#contactForm").submit(function(){
+     // alert('done');
       $.post($(this).attr('action'), $(this).serialize(), function(response){
             // do something here on success
-      },'json');
+            console.log(response);
+            alert('Success');
+      },'json')
+      .error(function() {
+        //need to check for 401 status here to do something
+        alert('There was an error.');
+      });
+      // alert('done2');
       return false;
    });
 });
