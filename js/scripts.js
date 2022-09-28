@@ -10,17 +10,17 @@ $(document).ready(function(){
    // var $form = $('form');
    // var $form = #('contactForm');
    $("#contactForm").submit(function(){
-     // alert('done');
       $.post($(this).attr('action'), $(this).serialize(), function(response){
-            // do something here on success
-            console.log(response);
-            alert('Success');
+            // console.log(response);
+            // alert('Success');
+            $("#submitSuccessMessage").removeClass("d-none");
+            $("#submitErrorMessage").addClass("d-none");
+            $('input').val('');
       },'json')
       .error(function() {
-        //need to check for 401 status here to do something
-        alert('There was an error.');
+        $("#submitErrorMessage").removeClass("d-none");
+        $("#submitSuccessMessage").addClass("d-none");
       });
-      // alert('done2');
       return false;
    });
 });
